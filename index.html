@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- Tailwind Customize Script -->
     <script>
         tailwind.config = {
@@ -15,13 +20,16 @@
             extend: {
               colors: {
                 primary: '#B4F461',
+              },
+              fontFamily: {
+                lexend: ["Lexend", "sans-serif"]
               }
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="font-lexend">
     <header class="bg-[#ffeee753]">
         <div class="container mx-auto p-5">
            <!-- Top navbar -->
@@ -36,6 +44,7 @@
               <h2 class="font-bold">Donate Bangladesh</h2>
             </div>
 
+            <!-- Available Balance -->
             <div class="navbar-end flex gap-3">
               <img src="assets/coin.png" alt="coin">
               <p><span class="mr-1 font-bold">5500</span> BDT</p>
@@ -46,5 +55,88 @@
         </div>
         
     </header>
-    
+    <main></main>
+      <div class="container mx-auto p-5">
+        <!-- Two Buttons: Donation and History -->
+       <div class="flex justify-center items-center gap-5">
+        <button class="btn bg-primary px-7">Donation</button>
+        <button class="btn bg-transparent px-7">History</button>
+       </div>
+
+       <!-- Cards Area -->
+       <div>
+          <!-- Card-1: flood in Naokhali -->
+          <div class="border-gray-100 border-2 rounded-xl p-3 my-5 grid items-center">
+            <div class="flex justify-between gap-10 lg:flex-row">
+              <img
+                src="./assets/noakhali.png"
+                class="w-full rounded-lg shadow-2xl" />
+              <div class="space-y-8">
+                <!-- Donate for flood in Naokhali -->
+                <div class="w-fit flex gap-3 bg-gray-100 rounded-lg px-3 py-2">
+                  <img class="w-6" src="assets/coin.png" alt="coin">
+                  <p><span class="mr-1 font-bold">0</span> BDT</p> 
+                </div>
+
+                <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p>
+                  The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+                <!-- Flood in Noakhali input area -->
+                <input class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
+                <button class="btn bg-primary w-full">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card-2: Flood Relief in Feni -->
+          <div class="border-gray-100 border-2 rounded-xl p-3 my-5 grid items-center">
+            <div class="flex justify-between gap-10 lg:flex-row">
+              <img
+                src="./assets/feni.png"
+                class="w-full rounded-lg shadow-2xl" />
+              <div class="space-y-8">
+                <!-- Donate for Flood Relief in Feni -->
+                <div class="w-fit flex gap-3 bg-gray-100 rounded-lg px-3 py-2">
+                  <img class="w-6" src="assets/coin.png" alt="coin">
+                  <p><span class="mr-1 font-bold">600</span> BDT</p> 
+                </div>
+
+                <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                <p>
+                  The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                </p>
+                <!-- Flood in Noakhali input area -->
+                <input class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
+                <button class="btn bg-primary w-full">Donate Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card-3: Aid for Injured -->
+          <div class="border-gray-100 border-2 rounded-xl p-3 my-5 grid items-center">
+            <div class="flex justify-between gap-10 lg:flex-row">
+              <img
+                src="./assets/quota-protest.png"
+                class="w-full rounded-lg shadow-2xl blur-xl" />
+              <div class="space-y-8">
+                <!-- Amount: Aid for Injured -->
+                <div class="w-fit flex gap-3 bg-gray-100 rounded-lg px-3 py-2 ">
+                  <img class="w-6" src="assets/coin.png" alt="coin">
+                  <p><span class="mr-1 font-bold">2400</span> BDT</p> 
+                </div>
+
+                <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+                <p>
+                  The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                </p>
+                <!-- Aid for Injured input area -->
+                <input class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
+                <button class="btn bg-primary w-full">Donate Now</button>
+              </div>
+            </div>
+          </div>
+       </div>
+      
+      </div>
+    </main>
+</body>
 </html>
