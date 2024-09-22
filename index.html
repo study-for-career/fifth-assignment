@@ -7,8 +7,44 @@
     <!-- Tailwind & DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customize Script -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
+    <header class="bg-[#ffeee753]">
+        <div class="container mx-auto p-5">
+           <!-- Top navbar -->
+           <div class="navbar">
+            <div class="navbar-start">
+            <!-- The Blog Button -->
+              <button class="btn bg-primary px-7 py-2">Blog</button>
+            </div>
+
+            <div class="navbar-center flex items-center gap-3">
+              <img src="assets/logo.png" alt="Donation Logo">
+              <h2 class="font-bold">Donate Bangladesh</h2>
+            </div>
+
+            <div class="navbar-end flex gap-3">
+              <img src="assets/coin.png" alt="coin">
+              <p><span class="mr-1 font-bold">5500</span> BDT</p>
+              
+            </div>
+          </div>
+
+        </div>
+        
+    </header>
     
-</body>
 </html>
