@@ -86,7 +86,7 @@
                 </p>
                 <!-- Flood in Noakhali input area -->
                 <input class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
-                <button class="btn bg-primary w-full">Donate Now</button>
+                <button class="btn bg-primary w-full" onclick="my_modal_5.showModal()">Donate Now</button>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
                 </p>
                 <!-- Flood in Noakhali input area -->
                 <input class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
-                <button class="btn bg-primary w-full">Donate Now</button>
+                <button class="btn bg-primary w-full" onclick="my_modal_5.showModal()">Donate Now</button>
               </div>
             </div>
           </div>
@@ -136,12 +136,30 @@
                 </p>
                 <!-- Aid for Injured input area -->
                 <input class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
-                <button class="btn bg-primary w-full">Donate Now</button>
+                <button class="btn bg-primary w-full" onclick="my_modal_5.showModal()">Donate Now</button>
               </div>
             </div>
           </div>
        </div>
       
+       <!-- Modals -->
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box grid justify-center text-center">
+            <h3 class="text-2xl font-bold">Congrates!</h3>
+            <img class="mx-auto my-3" src="./assets/coin.png" alt="">
+            <p class="py-4">You have donated for humankind</p>
+            <h3 class="text-xl font-bold">Successfully</h3>
+            <div class="">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn my-3">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
        <!-- History Section Design -->
         <div class="space-y-3">
           <!-- single history -->
