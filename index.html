@@ -41,13 +41,13 @@
 
             <div class="navbar-center flex items-center gap-3">
               <img src="assets/logo.png" alt="Donation Logo">
-              <h2 class="font-bold">Donate Bangladesh</h2>
+              <h2 class="font-bold hidden md:block">Donate Bangladesh</h2>
             </div>
 
             <!-- Available Balance -->
             <div class="navbar-end flex gap-3">
-              <img src="assets/coin.png" alt="coin">
-              <p><span class="mr-1 font-bold">5500</span> BDT</p>
+              <img class="w-4 md:w-fit" src="assets/coin.png" alt="coin">
+              <p><span class="mr-0 md:mr-1 font-bold">5500</span> BDT</p>
               
             </div>
           </div>
@@ -56,7 +56,7 @@
         
     </header>
     <main></main>
-      <div class="container mx-auto p-5">
+       <div class="container mx-auto p-5">
         <!-- Two Buttons: Donation and History -->
        <div class="flex justify-center items-center gap-5">
         <button class="btn bg-primary px-7">Donation</button>
@@ -67,11 +67,13 @@
        <div>
           <!-- Card-1: flood in Naokhali -->
           <div class="border-gray-100 border-2 rounded-xl p-3 my-5 grid items-center">
-            <div class="flex justify-between gap-10 lg:flex-row">
-              <img
-                src="./assets/noakhali.png"
-                class="w-full rounded-lg shadow-2xl" />
-              <div class="space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div>
+                <img
+                src="./assets/noakhali.jpg"
+                class="w-full h-full rounded-lg shadow-2xl" />
+              </div>
+              <div class="space-y-9">
                 <!-- Donate for flood in Naokhali -->
                 <div class="w-fit flex gap-3 bg-gray-100 rounded-lg px-3 py-2">
                   <img class="w-6" src="assets/coin.png" alt="coin">
@@ -90,15 +92,17 @@
           </div>
           <!-- Card-2: Flood Relief in Feni -->
           <div class="border-gray-100 border-2 rounded-xl p-3 my-5 grid items-center">
-            <div class="flex justify-between gap-10 lg:flex-row">
-              <img
-                src="./assets/feni.png"
-                class="w-full rounded-lg shadow-2xl" />
-              <div class="space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div>
+                <img
+                src="./assets/feni.jpg"
+                class="w-full h-full rounded-lg shadow-2xl" />
+              </div>
+              <div class="space-y-9">
                 <!-- Donate for Flood Relief in Feni -->
                 <div class="w-fit flex gap-3 bg-gray-100 rounded-lg px-3 py-2">
                   <img class="w-6" src="assets/coin.png" alt="coin">
-                  <p><span class="mr-1 font-bold">600</span> BDT</p> 
+                  <p><span class="mr-1 font-bold">0</span> BDT</p> 
                 </div>
 
                 <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -113,15 +117,17 @@
           </div>
           <!-- Card-3: Aid for Injured -->
           <div class="border-gray-100 border-2 rounded-xl p-3 my-5 grid items-center">
-            <div class="flex justify-between gap-10 lg:flex-row">
-              <img
-                src="./assets/quota-protest.png"
-                class="w-full rounded-lg shadow-2xl blur-xl" />
-              <div class="space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div>
+                <img
+                src="./assets/quota-movement.jpg"
+                class="w-full h-full rounded-lg shadow-2xl" />
+              </div>
+              <div class="space-y-7">
                 <!-- Amount: Aid for Injured -->
                 <div class="w-fit flex gap-3 bg-gray-100 rounded-lg px-3 py-2 ">
                   <img class="w-6" src="assets/coin.png" alt="coin">
-                  <p><span class="mr-1 font-bold">2400</span> BDT</p> 
+                  <p><span class="mr-1 font-bold">0</span> BDT</p> 
                 </div>
 
                 <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
@@ -136,6 +142,8 @@
           </div>
        </div>
       
+
+       
       </div>
     </main>
 </body>
