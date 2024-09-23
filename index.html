@@ -47,7 +47,7 @@
             <!-- Available Balance -->
             <div class="navbar-end flex gap-3">
               <img class="w-4 md:w-fit" src="assets/coin.png" alt="coin">
-              <p><span class="mr-0 md:mr-1 font-bold">5500</span> BDT</p>
+              <p><span id="available-balance" class="mr-0 md:mr-1 font-bold">5500</span> BDT</p>
               
             </div>
           </div>
@@ -77,7 +77,7 @@
                 <!-- Donate for flood in Naokhali -->
                 <div class="w-fit flex gap-3 bg-gray-100 rounded-lg px-3 py-2">
                   <img class="w-6" src="assets/coin.png" alt="coin">
-                  <p><span class="mr-1 font-bold">0</span> BDT</p> 
+                  <p><span id="donation-amount-noakhali" class="mr-1 font-bold">0</span> BDT</p> 
                 </div>
 
                 <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -85,8 +85,8 @@
                   The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                 </p>
                 <!-- Flood in Noakhali input area -->
-                <input class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
-                <button class="btn bg-primary w-full" onclick="my_modal_5.showModal()">Donate Now</button>
+                <input id="input-noakhali" class="w-full border-gray-200 border-2 rounded-lg px-4 py-2" type="text" placeholder="Write Donation Amount">
+                <button id="btn-noakhali" class="btn bg-primary w-full" onclick="">Donate Now</button>
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@
        
       </div>
     </main>
-
+    <script src="utilities.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
