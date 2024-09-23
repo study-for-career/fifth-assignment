@@ -59,12 +59,12 @@
        <div class="container mx-auto p-5">
         <!-- Two Buttons: Donation and History -->
        <div class="flex justify-center items-center gap-5">
-        <button class="btn bg-primary px-7">Donation</button>
-        <button class="btn bg-transparent px-7">History</button>
+        <button id="donation-btn" class="btn bg-primary px-7">Donation</button>
+        <button id="history-btn" class="btn bg-transparent px-7">History</button>
        </div>
 
        <!-- Cards Area -->
-       <div>
+       <div id="donation-cards">
           <!-- Card-1: flood in Naokhali -->
           <div class="border-gray-100 border-2 rounded-xl p-3 my-5 grid items-center">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -161,7 +161,7 @@
         </dialog>
 
        <!-- History Section Design -->
-        <div class="space-y-3">
+        <div id="history" class="space-y-3 my-5 hidden">
           <!-- single history -->
            <div class="border-2 border-gray-100 rounded-lg p-5">
             <h3>96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
@@ -177,5 +177,7 @@
        
       </div>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
