@@ -38,20 +38,21 @@ historyBtn.addEventListener('click', function(){
 
 // Noakhali Flood Donation Button
 document.getElementById('btn-noakhali').addEventListener('click', function(){
-    const inputNoakhali = getInputValue("input-noakhali");
+    const donationAmount = getInputValue("input-noakhali");
     const totalDonationAmount = getInnerText("donation-amount-noakhali");
     const availableBalance = getInnerText('available-balance');
 
-    if(typeof inputNoakhali !== 'number' || inputNoakhali < 1 || false ){
-         alert('Invalid Input')
+    if(typeof donationAmount !== 'number' || donationAmount < 1 || false || availableBalance < donationAmount){
+        my_modal_6.showModal()
+        // alert('Invalid Input or Insufficient Balance')
          return
     } else {
         // Add Donation Balance to the Noakhali Balance Field
-        const newDonationAmount = totalDonationAmount + inputNoakhali;
+        const newDonationAmount = totalDonationAmount + donationAmount;
         noakhaliFloodEl.innerText = newDonationAmount;
 
         // Substract Available  Balance after Successful Donation
-        const newAvailabelBalance = availableBalance - inputNoakhali;
+        const newAvailabelBalance = availableBalance - donationAmount;
         availableBalanceEl.innerText = newAvailabelBalance;
         my_modal_5.showModal()
     }
