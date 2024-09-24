@@ -20,7 +20,7 @@
             extend: {
               colors: {
                 primary: '#B4F461',
-                background: '#f1e3de80',
+                background: '#f1e9e68b',
               },
               fontFamily: {
                 lexend: ["Lexend", "sans-serif"]
@@ -31,7 +31,8 @@
       </script>
 </head>
 <body class="font-lexend">
-    <header class="sticky top-0 backdrop-blur">
+
+    <header class="sticky top-0 backdrop-blur-md">
        <section class="bg-background">
         <div class="container mx-auto px-5 py-3">
           <!-- Top navbar -->
@@ -62,12 +63,12 @@
           <!-- Two Buttons: Donation and History -->
           <div class="flex justify-center gap-5 items-center mt-4">
            <button id="donation-btn" class="btn bg-primary px-7">Donation</button>
-           <button id="history-btn" class="btn bg-transparent px-7">History</button>
+           <button id="history-btn" class="btn bg-white px-7">History</button>
            </div>
         </div>
-       </section>
-        
+       </section>    
     </header>
+    
     <main>
        <div class="container mx-auto p-5">
 
@@ -190,6 +191,9 @@
           <!-- New Created history will appear here. -->
         </div>
     </main>
+
+    <footer class="w-full bg-background  p-8">   </footer>
+    
     <script src="utilities.js"></script>
     <script src="app.js"></script>
 </body>

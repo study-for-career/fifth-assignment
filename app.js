@@ -26,9 +26,9 @@ donationBtn.addEventListener('click', function(){
     historyArea.classList.add('hidden');
      // Add the background color of donation button and remove from history button
     donationBtn.classList.add('bg-primary');
-    donationBtn.classList.remove('bg-transparent');
+    donationBtn.classList.remove('bg-white');
     
-    historyBtn.classList.add('bg-transparent');
+    historyBtn.classList.add('bg-white');
     historyBtn.classList.remove('bg-primary');
 })
 
@@ -38,9 +38,9 @@ historyBtn.addEventListener('click', function(){
     donationCards.classList.add('hidden');
     // Add the background color of history button and remove from donation button
     historyBtn.classList.add('bg-primary');
-    historyBtn.classList.remove('bg-transparent')
+    historyBtn.classList.remove('bg-white')
 
-    donationBtn.classList.add('bg-transparent');
+    donationBtn.classList.add('bg-white');
     donationBtn.classList.remove('bg-primary');
 })
 
@@ -152,12 +152,6 @@ document.getElementById('btn-qouta-donation').addEventListener('click', function
 
  const donationBtnArea = document.getElementById('donation-btn-area');
 
-// window.onscroll(donationBtnArea.classList.toggle("bg-background"))
-
-function changeBg(){
-    console.log('cs')
-   
-}
 
 window.addEventListener('scroll', function(){
   
