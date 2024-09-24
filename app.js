@@ -58,18 +58,18 @@ document.getElementById('btn-noakhali').addEventListener('click', function(){
     } else {
         // Add Donation Balance to the Noakhali Balance Field
         const newDonationAmount = totalDonationAmount + donationAmount;
-        noakhaliFloodEl.innerText = newDonationAmount;
+        noakhaliFloodEl.innerText = newDonationAmount.toFixed(2);
 
         // Substract Available  Balance after Successful Donation
         const newAvailabelBalance = availableBalance - donationAmount;
-        availableBalanceEl.innerText = newAvailabelBalance;
+        availableBalanceEl.innerText = newAvailabelBalance.toFixed(2);
 
         // Add Transaction to History section
 
         const trxHistory = document.createElement('div');
         trxHistory.className = "border-2 border-gray-100 rounded-lg p-5";
         trxHistory.innerHTML = `
-        <h3> <span class="font-bold">${donationAmount}</span> Taka is Donated for Flood at Noakhali, Bangladesh</h3>
+        <h3> <span class="font-bold">${donationAmount.toFixed(2)}</span> Taka is Donated for Flood at Noakhali, Bangladesh</h3>
         <p class="bg-gray-200 p-1 rounded-lg"> Date : ${new Date()}</p>
         `
         historyArea.insertBefore(trxHistory, historyArea.firstChild);
@@ -94,18 +94,18 @@ document.getElementById('btn-feni').addEventListener('click', function(){
     } else {
         // Add Donation Balance to the Noakhali Balance Field
         const newDonationAmount = totalDonationAmount + donationAmount;
-        feniFloodEl.innerText = newDonationAmount;
+        feniFloodEl.innerText = newDonationAmount.toFixed(2);
 
         // Substract Available  Balance after Successful Donation
         const newAvailabelBalance = availableBalance - donationAmount;
-        availableBalanceEl.innerText = newAvailabelBalance;
+        availableBalanceEl.innerText = newAvailabelBalance.toFixed(2);
 
         // Add Transaction to History section
 
         const trxHistory = document.createElement('div');
         trxHistory.className = "border-2 border-gray-100 rounded-lg p-5";
         trxHistory.innerHTML = `
-        <h3> <span class="font-bold">${donationAmount}</span> Taka is Donated for Feni Flood Relief, Bangladesh</h3>
+        <h3> <span class="font-bold">${donationAmount.toFixed(2)}</span> Taka is Donated for Feni Flood Relief, Bangladesh</h3>
         <p class="bg-gray-200 p-1 rounded-lg"> Date : ${new Date()}</p>
         `
         historyArea.insertBefore(trxHistory, historyArea.firstChild);
@@ -128,18 +128,18 @@ document.getElementById('btn-qouta-donation').addEventListener('click', function
     } else {
         // Add Donation Balance to the Noakhali Balance Field
         const newDonationAmount = totalDonationAmount + donationAmount;
-        qoutaArea.innerText = newDonationAmount;
+        qoutaArea.innerText = newDonationAmount.toFixed(2);
 
         // Substract Available  Balance after Successful Donation
         const newAvailabelBalance = availableBalance - donationAmount;
-        availableBalanceEl.innerText = newAvailabelBalance;
+        availableBalanceEl.innerText = newAvailabelBalance.toFixed(2);
 
         // Add Transaction to History section
 
         const trxHistory = document.createElement('div');
         trxHistory.className = "border-2 border-gray-100 rounded-lg p-5";
         trxHistory.innerHTML = `
-        <h3> <span class="font-bold">${donationAmount}</span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
+        <h3> <span class="font-bold">${donationAmount.toFixed(2)}</span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
         <p class="bg-gray-200 p-1 rounded-lg"> Date : ${new Date()}</p>
         `
         historyArea.insertBefore(trxHistory, historyArea.firstChild);

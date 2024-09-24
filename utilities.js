@@ -8,7 +8,7 @@ function getInputValue(id){
         allLetters.push(letterToNumber);        
     }
 
-    if( allLetters.includes(NaN) || inputValue === ''){
+    if( isNaN(inputValue) || inputValue === ''){
         return false;
     } else {
         return parseFloat(inputValue);
