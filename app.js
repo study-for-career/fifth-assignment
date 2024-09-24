@@ -115,7 +115,6 @@ document.getElementById('btn-feni').addEventListener('click', function(){
 })
 
 
-
 // Qouta Movement Injured Donation Functionalities
 document.getElementById('btn-qouta-donation').addEventListener('click', function(){
     const donationAmount = getInputValue("input-qouta");
@@ -149,3 +148,23 @@ document.getElementById('btn-qouta-donation').addEventListener('click', function
     }
 })
 
+// Scroll Effect on Sticky Menu
+
+ const donationBtnArea = document.getElementById('donation-btn-area');
+
+// window.onscroll(donationBtnArea.classList.toggle("bg-background"))
+
+function changeBg(){
+    console.log('cs')
+   
+}
+
+window.addEventListener('scroll', function(){
+  
+    if(window.scrollY >= 100){
+        donationBtnArea.classList.add('bg-background');
+        console.log('dsajfl')
+    } else {
+        donationBtnArea.classList.remove('bg-background');
+    }
+})

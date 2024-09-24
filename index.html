@@ -20,6 +20,7 @@
             extend: {
               colors: {
                 primary: '#B4F461',
+                background: '#f1e3de80',
               },
               fontFamily: {
                 lexend: ["Lexend", "sans-serif"]
@@ -30,41 +31,47 @@
       </script>
 </head>
 <body class="font-lexend">
-    <header class="bg-[#ffeee790]  sticky top-0 backdrop-blur">
-        <div class="container mx-auto p-5">
-           <!-- Top navbar -->
-           <div class="navbar">
-            <div class="navbar-start">
-            <!-- The Blog Button -->
-            <a href="./blog.html"> <button class="btn bg-primary px-7 py-2">Blog</button></a>
-            </div>
+    <header class="sticky top-0 backdrop-blur">
+       <section class="bg-background">
+        <div class="container mx-auto px-5 py-3">
+          <!-- Top navbar -->
+          <div class="navbar">
+           <div class="navbar-start">
+           <!-- The Blog Button -->
+           <a href="./blog.html"> <button class="btn bg-primary px-7 py-2">Blog</button></a>
+           </div>
 
-            <div class="navbar-center flex items-center gap-3">
-              <img src="assets/logo.png" alt="Donation Logo">
-              <h2 class="font-bold hidden md:block">Donate Bangladesh</h2>
-            </div>
+           <div class="navbar-center flex items-center gap-3">
+             <img src="assets/logo.png" alt="Donation Logo">
+             <h2 class="font-bold hidden md:block">Donate Bangladesh</h2>
+           </div>
 
-            <!-- Available Balance -->
-            <div class="navbar-end flex gap-3">
-              <img class="w-4 md:w-fit" src="assets/coin.png" alt="coin">
-              <p><span id="available-balance" class="mr-0 md:mr-1 font-bold">50500</span> BDT</p>
-              
-            </div>
-          </div>
-
-         <!-- Two Buttons: Donation and History -->
-        <div class="flex justify-center items-center gap-5 mt-4 bg ">
-          <button id="donation-btn" class="btn bg-primary px-7">Donation</button>
-          <button id="history-btn" class="btn bg-transparent px-7">History</button>
+           <!-- Available Balance -->
+           <div class="navbar-end flex gap-3">
+             <img class="w-4 md:w-fit" src="assets/coin.png" alt="coin">
+             <p><span id="available-balance" class="mr-0 md:mr-1 font-bold">5500</span> BDT</p>
+             
+           </div>
+         </div>
+        
         </div>
+       </section>
 
+       <section id="donation-btn-area">
+        <div class="container mx-auto px-5 py-3">
+          <!-- Two Buttons: Donation and History -->
+          <div class="flex justify-center gap-5 items-center mt-4">
+           <button id="donation-btn" class="btn bg-primary px-7">Donation</button>
+           <button id="history-btn" class="btn bg-transparent px-7">History</button>
+           </div>
         </div>
+       </section>
         
     </header>
-    <main></main>
+    <main>
        <div class="container mx-auto p-5">
-        
-        
+
+       
        <!-- Cards Area -->
        <div id="donation-cards">
           <!-- Card-1: flood in Naokhali -->

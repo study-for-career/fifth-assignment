@@ -21,6 +21,7 @@
                 extend: {
                   colors: {
                     primary: '#B4F461',
+                    background: '#f1e3de80',
                   },
                   fontFamily: {
                     lexend: ["Lexend", "sans-serif"]
@@ -31,7 +32,7 @@
           </script>
 </head>
 <body class="font-lexend">
-    <header class="bg-[#ffeee790]  sticky top-0 backdrop-blur">
+    <header class="bg-[#ffeee790]">
         <div class="container mx-auto p-5">
             <!-- Top navbar -->
            <div class="navbar">
@@ -68,28 +69,36 @@
                   <input type="radio" name="my-accordion-4" checked="checked" />
                   <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                   <div class="collapse-content">
-                    <p>hello</p>
+                    <p>The Document Object Model (DOM) is a programming interface for web documents (html). It represents the document as nodes and objects. So that a programming language can access the documents. </p>
                   </div>
                 </div>
+                
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                   <div class="collapse-content">
-                    <p>hello</p>
+                    <p> There are several ways to select an element. Most used selector:  byID, byClassName, byTagName, querySelector, querySelectorAll</p>
+                      
                   </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                   <div class="collapse-content">
-                    <p>hello</p>
+                    <p> Instead of working on an element by targeting it, working on the element through its parent is called event delegation. <br>
+                      By working through event delegation we can not only operate on the current element but also access any new element added to the same parent. Which helps us to do our work easier, writing less code and faster. </p>
                   </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                   <input type="radio" name="my-accordion-4" />
                   <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                   <div class="collapse-content">
-                    <p>hello</p>
+                    <p>Manipulate an attributes: we can use getAttribute() to get an element's attribute. 
+                      setAttribute() to add a new attribute. Also has removeAttribute(); <br>
+                      To give style an element we can use elementName.style.propertyName = 'value'
+                      <br> Also we can create style element and add to head section to give our desired style using js.
+
+                    </p>
                   </div>
                 </div>
               </div>
