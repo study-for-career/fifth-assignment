@@ -51,7 +51,7 @@ document.getElementById('btn-noakhali').addEventListener('click', function(){
     const totalDonationAmount = getInnerText("donation-amount-noakhali");
     const availableBalance = getInnerText('available-balance');
 
-    if(typeof donationAmount !== 'number' || donationAmount < 1 || false || availableBalance < donationAmount){
+    if(typeof donationAmount !== 'number' || donationAmount < 1 ||  availableBalance < donationAmount){
         my_modal_6.showModal()
         // alert('Invalid Input or Insufficient Balance')
          return
@@ -87,7 +87,7 @@ document.getElementById('btn-feni').addEventListener('click', function(){
     const totalDonationAmount = getInnerText("amount-feni");
     const availableBalance = getInnerText('available-balance');
 
-    if(typeof donationAmount !== 'number' || donationAmount < 1 || false || availableBalance < donationAmount){
+    if(typeof donationAmount !== 'number' || donationAmount < 1 || availableBalance < donationAmount){
         my_modal_6.showModal()
         // alert('Invalid Input or Insufficient Balance')
          return
@@ -121,7 +121,7 @@ document.getElementById('btn-qouta-donation').addEventListener('click', function
     const totalDonationAmount = getInnerText("quota-amount");
     const availableBalance = getInnerText('available-balance');
 
-    if(typeof donationAmount !== 'number' || donationAmount < 1 || false || availableBalance < donationAmount){
+    if(typeof donationAmount !== 'number' || donationAmount < 1 || availableBalance < donationAmount){
         my_modal_6.showModal()
         // alert('Invalid Input or Insufficient Balance')
          return
@@ -139,26 +139,11 @@ document.getElementById('btn-qouta-donation').addEventListener('click', function
         const trxHistory = document.createElement('div');
         trxHistory.className = "border-2 border-gray-100 rounded-lg p-5";
         trxHistory.innerHTML = `
-        <h3> <span class="font-bold">${donationAmount}</span> Taka Aid for Injured in Quota Movement, Bangladesh</h3>
+        <h3> <span class="font-bold">${donationAmount}</span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
         <p class="bg-gray-200 p-1 rounded-lg"> Date : ${new Date()}</p>
         `
         historyArea.insertBefore(trxHistory, historyArea.firstChild);
 
         my_modal_5.showModal();
-    }
-})
-
-// Scroll Effect on Sticky Menu
-
- const donationBtnArea = document.getElementById('donation-btn-area');
-
-
-window.addEventListener('scroll', function(){
-  
-    if(window.scrollY >= 100){
-        donationBtnArea.classList.add('bg-background');
-        console.log('dsajfl')
-    } else {
-        donationBtnArea.classList.remove('bg-background');
     }
 })

@@ -8,12 +8,13 @@ function getInputValue(id){
         allLetters.push(letterToNumber);        
     }
 
-    if(allLetters.includes(NaN) || inputValue === ''){
+    if( allLetters.includes(NaN) || inputValue === ''){
         return false;
     } else {
         return parseFloat(inputValue);
     }
 }
+
 
 // Function for getting innerText
 
